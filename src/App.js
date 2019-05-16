@@ -42,7 +42,7 @@ export default class App extends Component {
           }
         />
         <Route
-          path="/user/:id"
+          path="/user/:id/:name"
           render = {props => 
             <ProfilePage 
               {...props} 

@@ -26,7 +26,7 @@ export default class HomePage extends Component {
           {
             users.map(user =>
               <Row key={user.id} className="mt-3">
-                <Col md="4" className="d-flex justify-content-center align-items-center flex-column">
+                <Col md="4" className="d-flex justify-content-start align-items-center flex-column p-1">
                   <Link to={`/users/${user.id}`}>
                     <Image
                         src={user.profileImage}

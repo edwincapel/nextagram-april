@@ -19,6 +19,8 @@ export default class ProfilePage extends Component {
   }
 
   render(){
+    console.log(this.props.match.params.id);
+    console.log(this.props.match.params.name);
     const {user} = this.props
 
     if (user) {
@@ -45,7 +47,7 @@ export default class ProfilePage extends Component {
               </Col>
             </Row>
           </Container>
-          <Container>
+          <Container fluid>
             <Row className="justify-content-center mt-5">
               <Col md="10" className="d-flex justify-content-center flex-wrap">
                 <UserImages user_id={user.id}/>
