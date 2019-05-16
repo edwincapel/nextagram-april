@@ -39,7 +39,7 @@ export default class ProfilePage extends Component {
                 </div>
                 <div className="ml-3 p-2">
                   <p className="mt-1">{user.username}</p>
-                  <p className="mt-1">Other info</p>
+                  <p className="mt-1">Holiday on 20th,22nd May</p>
                   <Button color="info">Follow</Button>{' '}
                 </div>
               </Col>
@@ -47,7 +47,7 @@ export default class ProfilePage extends Component {
           </Container>
           <Container>
             <Row className="justify-content-center mt-5">
-              <Col md="10">
+              <Col md="10" className="d-flex justify-content-center flex-wrap">
                 <UserImages user_id={user.id}/>
               </Col>
             </Row>
