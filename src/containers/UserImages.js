@@ -14,7 +14,6 @@ export default class UserImages extends Component {
     axios.get(`https://insta.nextacademy.com/api/v1/images?userId=${this.props.user_id}`)
     .then((response) => {
       // handle success
-      console.log(response);
       this.setState({
         images: response.data
       })
@@ -30,12 +29,16 @@ export default class UserImages extends Component {
     return (
       <>
         {
-          images.map(image =>
-            <Image 
-              src={image} 
-              width="200px" 
-              alt=""
-            />
+          images.map((image, index) =>
+            <Image
+              src={image}
+              key={index}
+              width="225"
+              height="200"
+              alt="My awesome image"
+              placeholderColor="#fff"
+              className="p-2"
+            /> 
           )
         }
       </>

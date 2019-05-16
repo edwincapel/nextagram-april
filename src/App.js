@@ -22,7 +22,6 @@ export default class App extends Component {
     })
     .catch((error) =>{
       // handle error
-      console.log(error);
     })
   }
 
