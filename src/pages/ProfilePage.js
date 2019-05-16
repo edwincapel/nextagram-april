@@ -19,8 +19,6 @@ export default class ProfilePage extends Component {
   }
 
   render(){
-    console.log(this.props.match.params.id);
-    console.log(this.props.match.params.name);
     const {user} = this.props
 
     if (user) {
