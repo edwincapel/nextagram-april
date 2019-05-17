@@ -5,6 +5,7 @@ import {Switch,Route} from "react-router-dom"
 
 import HomePage from './pages/HomePage'
 import ProfilePage from './pages/ProfilePage'
+import NavBar from './containers/NavBar'
 
 export default class App extends Component {
   constructor(props){
@@ -31,6 +32,7 @@ export default class App extends Component {
     const {users} = this.state
     return (
       <>
+      <NavBar/>
       <Switch>
         {/* these are good */}
         <Route
